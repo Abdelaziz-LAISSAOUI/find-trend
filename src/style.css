@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+:root{
+    --global-text: 16px;
+    --title-xs: 2.25rem;
+    --sub-titles:2rem;
+    --description-xs: 0.875rem;
+    --price-xs: 3.75rem;
+    --deal-xs: 2rem;
+    --txt-xs:1.125rem;
+    --arrow: 0.75rem;
+    --findtrend-green: #A8FF35;
+}
+
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif ;
+}
+
+/********{  FRAMEWORK  }********/
+.h-screen{
+    height: 100vh;
+}
+
+/* ----- BACKRGOUND COLORs ------  */
+.bg-green{
+    background-color: var(--findtrend-green);
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+/* ----- BUTTONS ------  */
+.btn{
+    padding: 12px 24px;
+    border-radius: 40px;
+}
+
+/* ----- TYPOGRAPHY------  */
+.txt-center{
+    text-align: center;
+}
+
+.txt-light{
+    font-weight: 300;
+}
+
+.txt-regular{
+    font-weight: 400;
+}
+
+.txt-bold{
+    font-weight: 700;
+}
+
+.txt-black{
+    font-weight: 900;
+}
+
+
+/* ----- FLEXBOX ------  */
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+/*  ------THE HERO SECTION------  */
+
+#hero{
+    background-image: url(../assetes/mobile.png);
+    background-repeat: repeat;
+    color: white;
+    padding-bottom: 6rem;
+}
+
+#hero nav{
+    padding: 24px 18px;
+}
+
+#hero nav .hamburger{
+    gap: 6px;
+}
+
+#hero nav .hamburger span:first-child , #hero nav .hamburger span:nth-last-child(1){
+    width: 18px;
+    height: 2px;;
+}
+
+#hero h1{
+    font-size: var(--title-xs);
+    margin-top: 3.5rem;
+}
+
+#hero p{
+    font-size: var(--description-xs);
+    margin-top: 1rem;
+    color: #8B8B8B;
+}
+
+#hero button{
+    display: block;
+    font-size: var(--description-xs);
+    margin: 2.75rem auto 3rem auto;
+    background-color: var(--findtrend-green);
+}
+
+.tabs img{
+    width: 300px;
+    height: 77px;
+    position: relative;
+
+} 
+
+.tabs-animation{
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.tabs img:nth-child(1){
+    animation-name: Tabs-animation1;
+    transform: rotate(-4deg) translateX(23rem);
+    z-index: 40;
+}
+
+.tabs img:nth-child(2){
+    animation-name: Tabs-animation2;
+    animation-delay: 0.5s;
+    transform: rotate(2deg) translateX(-23rem);
+    z-index: 30;
+
+}
+
+.tabs img:nth-child(3){
+    animation-name: Tabs-animation3;
+    animation-delay: 1s;
+    transform: rotate(-2deg) translateX(23rem) ;
+    z-index: 20;
+
+}
+
+.tabs img:nth-child(4){
+    animation-name: Tabs-animation4;
+    animation-delay: 1.5s;
+    transform: rotate(4deg) translateX(-23rem);
+    z-index: 10;
+}
+
+
+
+.negative-margin{
+    margin-top: -15px;
+}
+
+@keyframes Tabs-animation1 {
+    0%{
+        transform: translateX(23rem);
+    }
+
+    80%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: rotate(-4deg);
+    }
+}
+
+@keyframes Tabs-animation2 {
+    0%{
+        transform: translateX(-23rem);
+    }
+
+    80%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes Tabs-animation3 {
+    0%{
+        transform: translateX(23rem);
+    }
+
+    80%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+
+@keyframes Tabs-animation4 {
+    0%{
+        transform: translateX(-23rem);
+    }
+
+    80%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: rotate(4deg);
+    }
+}
+
+
+/*  ------THE 2nd SECTION------  */
+
+.second{
+    background-color: var(--findtrend-green);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.second > h2{
+    font-size: var(--sub-titles);
+}
+
+.main{
+    margin-top: 2rem;
+}
+
+.Findtrend-tab{
+    padding: 24px;
+    border-radius: 14px;
+}
+
+.Findtrend-tab > img{
+    width: 290px;
+    height: 70px;
+}
+
+.main div > span{
+    font-size: 12px;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+}
+
+.main div:first-child{
+    align-self: flex-end;
+    margin-right: 1rem;
+    margin-bottom: -1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.main div:first-child > span{
+    transform: rotate(6deg);
+}
+
+.main div:first-child > img{
+    transform: matrix(-0.9, -0.44, -0.44, 0.9, 0, 0);
+    margin-right: 4rem;
+    animation-name: arrows;
+}
+
+.main div:last-child{
+    align-self: flex-start;
+    margin-left: 0.75rem;
+    margin-top: -1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.main div:last-child > span{
+    transform: rotate(1.13deg);
+}
+
+.main div:last-child > img {
+    transform: rotate(-104.64deg);
+}
+
+.second p{
+    margin-top: 2.5rem;
+    font-size: var(--description-xs);
+}
+
+@keyframes arrows {
+    0%{
+        transform: translateX(4rem);
+    }
+    90%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: matrix(-0.9, -0.44, -0.44, 0.9, 0, 0);
+    }
+}
+
+/*  ------THE 3rd SECTION------  */
+.third{
+    padding-top:5rem;
+    padding-bottom: 10rem;
+    padding-left: 1.125rem;
+     
+}
+
+.third p{
+    font-size: var(--title-xs);
+}
+
+.third p > span{
+    font-size: inherit;
+    color: #ADADAD;
+}
+
+/*  ------THE 4th SECTION------  */
+.fourth h2{
+    font-size: var(--title-xs);
+}
+
+.grid{
+    padding: 2rem 1.125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.grid .flex{
+    background: #F5F5F5;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.grid .flex > img{
+    width: 100px;
+    height: 35px;
+    padding: 19px 30px;
+    object-fit: contain;
+}
