@@ -10,22 +10,72 @@
 </head>
 <body>
     <section id="hero">
-        <nav class="flex flex-between align-center">
-            <img src="../assetes/logo/Vector.png" alt="Findtrend LOGO">
+        <!-- <nav class="flex flex-between align-center">
+            
+            <picture>
+                <source srcset="../assetes/logo/bigLogo.png" media="(min-width: 768px)">
+                <img src="../assetes/logo/Vector.png" alt="Findtrend LOGO">
+            </picture>
             <span class="hamburger flex flex-col">
                 <span class="bg-white"></span>
                 <span class="bg-white"></span>
             </span>
+            
+            <div class="linksLongin flex flex-col align-center bg-black">
+                <ul class="links flex">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#HowItWork"></a>How it work</li>
+                    <li><a href="#Solution"></a>Solution</li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Princing">Princing</a></li>
+                </ul>
+                
+                <div class="login flex flex-col ">
+                    <span><a href="#">Login</a></span>
+                    <button class="btn bg-white txt-bold">Register</button>
+                </div>
+            </div>
+        </nav> -->
+        <nav>
+            <!-- Logo -->
+            <picture>
+                <source 
+                srcset="../assetes/logo/bigLogo.png"
+                media="(min-width: 768px)">
+                <img src="../assetes/logo/Vector.png" alt="Findtrend LOGO">
+            </picture>
+            <input type="checkbox" id="hamburger">
+            <label class="hamburger" for="hamburger">
+                <span class="bg-white"></span>
+                <span class="bg-white"></span>
+            </label>
+            <div class="links">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#HowItWork">How it work</a></li>
+                    <li><a href="#Solution">Solution</a></li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                </ul>
+                <div>    
+                    <span><a href="#">Login</a></span>
+                    <button class="btn bg-white txt-bold">Register</button>
+                </div>
+            </div>
         </nav>
-        <h1 class="txt-black txt-center">
-            Minimize your <span style="font-size: 24px;">T</span><span style="font-size: 20px;">A</span><span style="font-size: 16px;">B</span><Span style="font-size: 14px;">S</Span>.<br/>
-            Find the trends!
-        </h1>
-        <p class="txt-light txt-center">
-            Don’t let your computer memories consumes<br/> all of those browser tabs.<br/> 
-            Findtrend  let you gathers all of your favorite<br/> website into one place.
-        </p>
-        <button class="btn txt-bold" >
+        <div class="container">    
+            <h1 class="txt-black txt-center">
+                Minimize your <span style="font-size: 24px;">T</span><span style="font-size: 20px;">A</span><span style="font-size: 16px;">B</span><Span style="font-size: 14px;">S</Span>.
+                Find the trends!
+            </h1>
+        </div>
+        <div class="container">
+            <p class="txt-light txt-center">
+                Don’t let your computer memories consumes all of those browser tabs. 
+                Findtrend  let you gathers all of your favorite website into one place.
+            </p>
+        </div>
+        <button class="getStarted btn txt-bold" >
             Get Started 🔥
         </button>
         <div class="tabs flex flex-col align-center">
@@ -35,31 +85,43 @@
             <img class="negative-margin tabs-animation" src="../assetes/tabs/tab1.png" alt="social media tab">
         </div>
     </section>
-    <section class="second ">
-        <h2 class="txt-center txt-bold">Open new tabs is sh*t</h2>
-        <div class="main flex flex-col flex-center align-center">    
+    
+    <section class="second" id="About">
+        <div class="container">
+            <h2 class="txt-center txt-bold">Open new tabs is sh*t</h2>
+        </div>
+        <div class="main flex flex-col flex-center align-center">  
             <div class="flex flex-col flex-center align-center">
                 <span class="txt-center">You just need one<br/>tab now</span>
-                <img class="tabs-animation" src="../assetes/arrows/arrow black.png" alt="arrow pointing to a card">
+                <img 
+                src="../assetes/arrows/arrow black.png"
+                alt="arrow pointing to a card"
+                >
             </div>
             <div class="Findtrend-tab bg-white">
-                <img src="../assetes/tabs/tab5.png" alt="Findtrend tab">
+                <img
+                src="../assetes/tabs/tab5.png"
+                alt="Findtrend tab">
             </div>
             <div class="flex flex-col flex-center align-center">
-                <img class="tabs-animation" src="../assetes/arrows/arrow black.png" alt="arrow pointing to a card">
+                <img
+                src="../assetes/arrows/arrow black.png"
+                alt="arrow pointing to a card">
                 <span class="txt-center">solution for<br/> discover a trend</span>
             </div>
         </div>    
         <p class="txt-center">
-            A solution for your browser tabs and don’t make<br/> your device get slower over time. Get ease and<br/> faster to discover a trend with just one tab.
+            A solution for your browser tabs and don’t make your device get slower over time. Get ease and faster to discover a trend with just one tab.
         </p>
     </section>
-    <section class="third">
+    
+    <section class="third" id="HowItWork">
         <p class="txt-black">
-            Findtrend helps you<br/> to increase your<br/> productivity and<br/> reduce your<br/> computer's<br/> memory load,<span class="txt-black">an<br/> application that can<br/> fulfill your daily<br/> browsing needs.</span>
+            Findtrend helps you to increase your productivity and reduce your computer's memory load,<span class="txt-black">an application that can fulfill your daily browsing needs.</span>
         </p>
     </section>
-    <section class="fourth">
+    
+    <section class="fourth" id="Solution">
         <h2 class="txt-black txt-center">
             Findtrend make<br/>+1000 Startup grow
         </h2>
@@ -114,7 +176,8 @@
             </div>
         </div>
     </section>
-    <section class="fifth">
+    
+    <section class="fifth" id="Features">
         <h2 class="txt-center txt-black">
             All platform connect to Findtrend
         </h2>
@@ -153,8 +216,8 @@
             View More Trend
         </button>
     </section>
-
-    <section class="sixth">
+    
+    <section class="sixth" id="Pricing">    
         <h2 class="txt-center txt-black">
             Get your best deal
         </h2>
@@ -168,7 +231,7 @@
             <span class="txt-center txt-">Save 10%<br/> per month</span>
         </div>
         <!-- cards -->
-        <div class="cards flex flex-col">    
+        <div class="cards flex">    
             <div class="prices-card flex flex-col flex-between bg-white ">
                 <p>Personal</p>
                 <p>Special first packet for all</p>
@@ -247,21 +310,21 @@
         
         
     </section>
-
-    <section class="seventh">
+    
+    <section class="seventh">   
         <h2 class="txt-center txt-black">Join us on email for</h2>
         <p class="txt-center txt-black">more trending topics</p>
         <button class="btn bg-black txt-bold">Join Now</button>
     </section>
-
-    <section class="last flex flex-col align-center">
+    
+    <footer class="flex align-center">
         <img src="../assetes/logo/logo dark.png" alt="Findtrend dark logo">
-        <ul class="flex flex-col align-center">
+        <ul class="flex align-center">
             <li>Privacy Policy</li>
             <li>Terms and Conditions</li>
             <li>Contact Us</li>
             <li>Careers</li>
         </ul>
-    </section>
+    </footer>
 </body>
 </html>
